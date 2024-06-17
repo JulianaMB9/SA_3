@@ -32,10 +32,10 @@
                     <%= row.situacao %>
                   </td>
                   <td> 
-                    <%= row.data_abertura %>
+                    <%= row.data_abertura.toLocaleDateString('pt-BR') %>
                   </td>
                   <td> 
-                    <%= row.data_conclusao %>
+                    <%= row.data_conclusao.toLocaleDateString('pt-BR') %>
                   </td>
                   <td>
                     <a href="tarefa/update/<%= row.id %>" class="text-dark">
